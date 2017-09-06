@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.lyle_thiam.labexer1.MainActivity">
+
+    <TextView
+        android:id="@+id/quiz1"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:hint="Quiz1"
+        tools:layout_editor_absoluteY="29dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_above="@+id/quiz2"
+        android:layout_alignLeft="@+id/quiz2"
+        android:layout_alignStart="@+id/quiz2"
+        android:layout_marginBottom="21dp" />
+
+    <TextView
+        android:id="@+id/quiz2"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:hint="Quiz2"
+        tools:layout_editor_absoluteY="106dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_above="@+id/seatworks"
+        android:layout_alignLeft="@+id/seatworks"
+        android:layout_alignStart="@+id/seatworks"
+        android:layout_marginBottom="18dp" />
+
+    <TextView
+        android:id="@+id/seatworks"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:hint="Seatworks"
+        tools:layout_editor_absoluteY="175dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignTop="@+id/Seatworks"
+        android:layout_alignLeft="@+id/labexer"
+        android:layout_alignStart="@+id/labexer" />
+
+    <TextView
+        android:id="@+id/labexer"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:hint="LabExercises"
+        tools:layout_editor_absoluteY="238dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignBaseline="@+id/LabExer"
+        android:layout_alignBottom="@+id/LabExer"
+        android:layout_alignRight="@+id/majorexam"
+        android:layout_alignEnd="@+id/majorexam" />
+
+    <TextView
+        android:id="@+id/majorexam"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:hint="Major Exams"
+        tools:layout_editor_absoluteY="319dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignBottom="@+id/MajorExam"
+        android:layout_toLeftOf="@+id/compute"
+        android:layout_toStartOf="@+id/compute" />
+
+    <EditText
+        android:id="@+id/Quiz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="30dp"
+        android:layout_alignTop="@+id/quiz1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/Quiz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteY="106dp"
+        tools:layout_editor_absoluteX="153dp"
+        android:layout_alignTop="@+id/quiz2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/Seatworks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="175dp"
+        android:layout_above="@+id/LabExer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp" />
+
+    <EditText
+        android:id="@+id/LabExer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="238dp"
+        android:layout_above="@+id/MajorExam"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp" />
+
+    <EditText
+        android:id="@+id/MajorExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="315dp"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/compute"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/compute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compute"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="400dp"
+        android:onClick="callSecondActivity"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

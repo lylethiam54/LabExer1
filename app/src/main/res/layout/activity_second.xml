@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lyle_thiam.labexer1.SecondActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rawave"
+        android:text="Your RA is "
+        android:textSize="18sp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_below="@+id/fsGrade"
+        android:layout_alignStart="@+id/finalgrade"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finalgrade"
+        android:text="Your Final Grade is "
+        android:textSize="18sp"
+        android:layout_marginLeft="26dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/goBackToMain"
+        android:layout_marginEnd="12dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rsGrade"
+        android:layout_alignBaseline="@+id/finalgrade"
+        android:layout_alignBottom="@+id/finalgrade"
+        android:layout_alignLeft="@+id/fsGrade"
+        android:layout_alignStart="@+id/fsGrade" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fsGrade"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/goBackToMain"
+        android:layout_toEndOf="@+id/goBackToMain"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="80dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@id/goBackToMain"
+        android:onClick="goBackToMain"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="136dp" />
+
+</RelativeLayout>
